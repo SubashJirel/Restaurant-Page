@@ -1,3 +1,7 @@
+import createRestaurantPage from './restaurant';
+import loadMenu from './menu';
+import loadContact from './contact';
+
 const createTabs = () => {
   const content = document.querySelector('#content');
 
@@ -36,6 +40,21 @@ function createNav() {
   nav.appendChild(homeButton);
   nav.appendChild(menuButton);
   nav.appendChild(contactButton);
+
+  homeButton.addEventListener('click', () => {
+    console.log('Home button clicked');
+
+    createRestaurantPage();
+  });
+  menuButton.addEventListener('click', () => {
+    console.log('menu button clicked');
+    loadMenu();
+  });
+  contactButton.addEventListener('click', () => {
+    console.log('contact button clicked');
+
+    loadContact();
+  });
 
   return nav;
 }
