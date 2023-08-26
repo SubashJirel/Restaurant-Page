@@ -63,10 +63,10 @@ function createMenuItem(name, description) {
 
   const foodImage = document.createElement('img');
   const finalName = name.split(' ').join('').toLowerCase();
-  console.log(finalName);
-  const imageName = `../assets/pizzacollection/${finalName}.jpg`;
-  foodImage.src = `../assets/pizzacollection/${finalName}.jpg`;
-  console.log(imageName);
+  //   console.log(finalName);
+  //   const imageName = `../assets/pizzacollection/${finalName}.jpg`;
+  foodImage.src = `../assets/pizzacollection/${finalName}.png`;
+  //   console.log(imageName);
 
   foodImage.alt = `${name}`;
 
