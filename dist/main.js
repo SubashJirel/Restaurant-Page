@@ -10,6 +10,16 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/home.js":
+/*!*********************!*\
+  !*** ./src/home.js ***!
+  \*********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nfunction createHome() {\r\n  const home = document.createElement('div');\r\n  home.classList.add('home');\r\n\r\n  const mainImage = document.createElement('img');\r\n  mainImage.src = '../assets/pizzas.jpg';\r\n  mainImage.alt = 'Pizzas';\r\n  mainImage.height = '500';\r\n\r\n  home.appendChild(createParagraph('Best pizzas and Burgers'));\r\n  home.appendChild(createParagraph('Best taste and quality'));\r\n  home.appendChild(mainImage);\r\n  home.appendChild(createParagraph('Order online or visit us!'));\r\n\r\n  return home;\r\n}\r\n\r\nfunction createParagraph(text) {\r\n  const paragraph = document.createElement('p');\r\n  paragraph.textContent = text;\r\n  return paragraph;\r\n}\r\n\r\nfunction loadHome() {\r\n  const main = document.getElementById('main');\r\n  main.textContent = '';\r\n  main.appendChild(createHome());\r\n}\r\n\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (loadHome);\r\n\n\n//# sourceURL=webpack://restaurantpage/./src/home.js?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
@@ -36,7 +46,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \***************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst createRestaurantPage = () => {\r\n  const content = document.querySelector('#content');\r\n\r\n  content.appendChild(createMain());\r\n  content.appendChild(createFooter());\r\n};\r\n\r\nfunction createMain() {\r\n  const main = document.createElement('main');\r\n  main.classList.add('main');\r\n  main.setAttribute('id', 'main');\r\n  return main;\r\n}\r\n\r\nfunction createFooter() {\r\n  const footer = document.createElement('footer');\r\n  footer.classList.add('footer');\r\n\r\n  const p = document.createElement('p');\r\n  p.textContent = `Copyright © 2023 Subash Jirel`;\r\n\r\n  footer.appendChild(p);\r\n\r\n  return footer;\r\n}\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (createRestaurantPage);\r\n\n\n//# sourceURL=webpack://restaurantpage/./src/restaurant.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _home__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./home */ \"./src/home.js\");\n\r\nconst createRestaurantPage = () => {\r\n  const content = document.querySelector('#content');\r\n\r\n  content.appendChild(createMain());\r\n  content.appendChild(createFooter());\r\n\r\n  (0,_home__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\r\n};\r\n\r\nfunction createMain() {\r\n  const main = document.createElement('main');\r\n  main.classList.add('main');\r\n  main.setAttribute('id', 'main');\r\n  return main;\r\n}\r\n\r\nfunction createFooter() {\r\n  const footer = document.createElement('footer');\r\n  footer.classList.add('footer');\r\n\r\n  const p = document.createElement('p');\r\n  p.textContent = `Copyright © 2023 Subash Jirel`;\r\n\r\n  footer.appendChild(p);\r\n\r\n  return footer;\r\n}\r\n\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (createRestaurantPage);\r\n\n\n//# sourceURL=webpack://restaurantpage/./src/restaurant.js?");
 
 /***/ }),
 

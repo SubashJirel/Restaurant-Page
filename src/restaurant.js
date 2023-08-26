@@ -1,8 +1,11 @@
+import loadHome from './home';
 const createRestaurantPage = () => {
   const content = document.querySelector('#content');
 
   content.appendChild(createMain());
   content.appendChild(createFooter());
+
+  loadHome();
 };
 
 function createMain() {
@@ -23,4 +26,5 @@ function createFooter() {
 
   return footer;
 }
+
 export default createRestaurantPage;
