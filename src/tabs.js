@@ -42,16 +42,16 @@ function createNav() {
   nav.appendChild(contactButton);
 
   homeButton.addEventListener('click', () => {
-    console.log('Home button clicked');
+    // console.log('Home button clicked');
 
     createRestaurantPage();
   });
   menuButton.addEventListener('click', () => {
-    console.log('menu button clicked');
+    // console.log('menu button clicked');
     loadMenu();
   });
   contactButton.addEventListener('click', () => {
-    console.log('contact button clicked');
+    // console.log('contact button clicked');
 
     loadContact();
   });
